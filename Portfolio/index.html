@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Umesh Bhatta - Personal Portfolio</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="owl.theme.default.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="owl.carousel.js"></script>
+	<script src="lib/typed/typed.min.js"></script>
+	<!-- google font link -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700,800,900&display=swap" rel="stylesheet">
+	<!-- css style link for html -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="page" class="site">
+		<div id="preloader"></div>
+		<!-- Script for preloader -->
+		<script type="text/javascript">
+			$(window).on('load', function () {
+				if ($('#preloader').length) {
+					$('#preloader').delay(100).fadeOut('slow', function () {
+						$(this).remove();
+					});
+				}
+			});
+		</script>
+		<!-- Script for preloader ends here -->
+
+		<!-- html code for navbar. includes responsive navbar also -->
+		<div class="navbar">
+			<div class="container">
+				<div class="slidemenu" id="slidemenu">
+					<div class="hamburger-close" id="hamburger-close" onclick="mynewFunction()">×</div>
+					<div class="menu-main-menu-container">
+						<ul id="menu-main-menu" class="menu">
+							<li>
+								<a href="" onclick="linkFunction()" class="nav-link res-nav-menu">HOME</a>
+							</li>
+							<li>
+								<a href="#about-section" onclick="linkFunction()" class="nav-link res-nav-menu">ABOUT</a>
+							</li>
+							<li>
+								<a href="#services-section" onclick="linkFunction()" class="nav-link res-nav-menu">SERVICES</a>
+							</li>
+							<li>
+								<a href="#portfolio-section" onclick="linkFunction()" class="nav-link res-nav-menu">WORK</a>
+							</li>
+							<li>
+								<a href="#blog-section" onclick="linkFunction()" class="nav-link res-nav-menu">BLOG</a>
+							</li>
+							<li>
+								<a href="#contact-section" onclick="linkFunction()" class="nav-link res-nav-menu">CONTACT</a>
+							</li>
+						</ul>
+					</div>  
+				</div>
+			</div>
+			<nav class="main-navbar">
+				<div class="container">
+					<div class="navbar-wrap">
+						<div class="name-main">
+							<a href="" class="name-nav">Umesh Bhatta</a>
+						</div>
+
+						<div class="hamburger" onclick="mynewFunction()">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+						<!-- Script for responsive navbar to display on click on hamburger menu and disappear on click on close button. This is only visible in smaller devices starting from 767px; -->
+						<script>
+							function mynewFunction() {
+								var x = document.getElementById("slidemenu");
+								if (x.style.display === "block") {
+									x.style.display = "none";
+								} else {
+									x.style.display = "block";
+								}
+							}
+						</script>
+
+					<!-- <script>
+						function linkFunction() {
+							var x = document.getElementById("slidemenu");
+							if (x.style.display === "block") {
+								x.style.display = "none";
+							} else {
+								x.style.display = "block";
+							}
+						}
+					</script> -->
+					<!-- Script code for responsive navbar ends here -->
+
+					<div class="nav-menu">
+						<ul class="nav-inner">
+							<li class="nav-item">
+								<a href="" class="nav-link">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a href="#about-section" class="nav-link">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a href="#services-section" class="nav-link">SERVICES</a>
+							</li>
+							<li class="nav-item">
+								<a href="#portfolio-section" class="nav-link">WORK</a>
+							</li>
+							<li class="nav-item">
+								<a href="#blog-section" class="nav-link">BLOG</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contact-section" class="nav-link">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- html code for navbar ends here -->
+
+	<!-- jquery code for navbar styles changes on scroll -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scroll = $(window).scrollTop();
+				if (scroll > 100) {
+					$(".navbar").css("background" , "#ffffff");
+					$(".navbar").css("box-shadow" , "0px 6px 9px 0px rgba(0, 0, 0, 0.06)");
+					$(".nav-link").css("color" , "#0078ff")
+					$(".name-nav").css("color" , "#0078ff")
+					$(".line").css("background" , "#0078ff")
+					$(".navbar").fadeIn();
+					$(".navbar").fadeIn("slow");
+					$(".navbar").fadeIn(3000);
+
+				}
+
+				else{
+					$(".navbar").css("background" , "transparent");  	
+					$(".nav-link").css("color" , "#FFFFFF")
+					$(".name-nav").css("color" , "#FFFFFF")
+					$(".line").css("background" , "#FFFFFF")
+				}
+			})
+		})
+	</script>
+	<!-- jquery code for navbar styles changes on scroll ends here -->
+
+	<!-- html code for banner section -->
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
+				<section class="intro-section" id="intro-section" style="background:url(images/intro-bg.jpg); background-size: 100% 100%; height: 100vh;">
+					<div class="container">
+						<div class="intro-content-wrap">
+							<div class="brief-intro">
+								<div class="brief-intro-title">
+									<h1>I am Umesh Bhatta</h1>
+								</div>
+
+								<div class="brief-intro-text" id="brief-intro-text" style="display: none;">
+									<p class="typed-items">Web Developer, Web Designer, Frontend Developer, Graphic Designer</p>
+								</div>
+								<span class="typed" id="typed">|</span>
+							</div>
+
+						</div>
+					</div>
+					<script type="text/javascript">
+						if ($('.typed').length == 1){
+							var typed_content = $('.typed-items').text();
+							var typed = new Typed('.typed',{
+								strings: typed_content.split(','),
+								typeSpeed: 100,
+								loop: true,
+								backDelay: 1100,
+								backSpeed: 30,
+							});
+						}
+					</script>
+				</section>
+				<!-- html code for banner section ends here -->
+
+				<!-- html code for about-section -->
+				<section class="about-section" id="about-section">
+					<div class="container">
+						<div class="content-wrap">
+							<div class="about-column" id="abt-column-new">
+								<div class="skills-div">
+									<div class="content-wrap">
+										<div class="intro-column">
+											<div class="content-wrap">
+												<div class="image-me">
+													<img src="images/testimonial-2.jpg">
+												</div>
+												<div class="my-details">
+													<div class="details-inner">
+														Name: <span>Umesh Bhatta</span>
+													</div>
+													<div class="details-inner">
+														Profile: <span>Frontend Developer</span>
+													</div>
+													<div class="details-inner">
+														Email: <span>ubhatta44@gmail.com</span>
+													</div>
+													<div class="details-inner">
+														Phone: <span><a href="tel:+9860460738">+977 9860460738</a></span>
+													</div>
+												</div>
+											</div>
+
+											<div class="skills-title">
+												<h2>Skills</h2>
+											</div>
+
+											<div class="skills">
+												<div class="skill-areas">
+													<div class="title-skill-areas">
+														<h5>HTML</h5>
+													</div>
+													<div class="skill-bar-percent Count">
+														<span>90</span>
+													</div>
+												</div>
+
+												<div class="progress-main skillbar" data-percent="90%">
+													<div class="progress-bar html-bar skillbar-bar"></div>
+												</div>
+											</div>
+
+											<div class="skills">
+												<div class="skill-areas">
+													<div class="title-skill-areas">
+														<h5>CSS3</h5>
+													</div>
+													<div class="skill-bar-percent Count">
+														<span>80</span>
+													</div>
+												</div>
+
+												<div class="progress-main skillbar" data-percent="80%">
+													<div class="progress-bar css-bar skillbar-bar"></div>
+												</div>
+											</div>
+
+											<div class="skills">
+												<div class="skill-areas">
+													<div class="title-skill-areas">
+														<h5>Bootstrap 4</h5>
+													</div>
+													<div class="skill-bar-percent Count">
+														<span>75</span>
+													</div>
+												</div>
+
+												<div class="progress-main skillbar" data-percent="75%">
+													<div class="progress-bar bootstrap-bar skillbar-bar"></div>
+												</div>
+											</div>
+
+											<div class="skills">
+												<div class="skill-areas">
+													<div class="title-skill-areas">
+														<h5>JavaScript</h5>
+													</div>
+													<div class="skill-bar-percent Count">
+														<span>70</span>
+													</div>
+												</div>
+
+												<div class="progress-main skillbar" data-percent="70%">
+													<div class="progress-bar javascript-bar skillbar-bar"></div>
+												</div>
+											</div>
+
+											<div class="skills">
+												<div class="skill-areas">
+													<div class="title-skill-areas">
+														<h5>JQuery</h5>
+													</div>
+													<div class="skill-bar-percent Count">
+														<span>60</span>
+													</div>
+												</div>
+
+												<div class="progress-main skillbar" data-percent="60%">
+													<div class="progress-bar jquery-bar skillbar-bar"></div>
+												</div>
+											</div>
+
+											<div class="skills">
+												<div class="skill-areas">
+													<div class="title-skill-areas">
+														<h5>HubSpot</h5>
+													</div>
+													<div class="skill-bar-percent Count">
+														<span>75</span>
+													</div>
+												</div>
+
+												<div class="progress-main skillbar" data-percent="75%">
+													<div class="progress-bar hubspot-bar skillbar-bar"></div>
+												</div>
+											</div>
+										</div>
+										<div class="description-column">
+											<div class="about-me-title">
+												<h2>About Me</h2>
+											</div>
+
+											<div class="about-me-content">
+												<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur.</p>
+
+												<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat.</p>
+
+												<p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- script for skill bar -->
+					<script type="text/javascript">
+						jQuery(document).ready(function(){
+							jQuery('.skillbar').each(function(){
+								jQuery(this).find('.skillbar-bar').animate({
+									width:jQuery(this).attr('data-percent')
+								},10000);
+							});
+						});
+
+						jQuery('.Count').each(function () {
+							var $this = $(this);
+							jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+								duration: 10000,
+								easing: 'swing',
+								step: function () {
+									$this.text(Math.ceil(this.Counter));
+								}
+							});
+						});
+					</script>
+
+					<!-- script for skill bar ends here -->
+				</section>
+				<!-- html code for about-section ends here -->
+
+				<!-- html code for services section -->
+				<section class="services-section" id="services-section">
+					<div class="container">
+						<div class="serve-title">
+							<h2>Services</h2>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+						</div>
+						<div class="line-bottom"></div>
+						<div class="content-wrap">
+							<div class="services-content">
+								<div class="serve-content-inner">
+									<span class="ico-circle">
+										<i class="ion-monitor"></i>
+									</span>
+									<div class="serve-title">
+										<h4>WEB DESIGN</h4>
+									</div>
+									<div class="serve-content">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="services-content">
+								<div class="serve-content-inner">
+									<span class="ico-circle">
+										<i class="ion-monitor"></i>
+									</span>
+									<div class="serve-title">
+										<h4>WEB DEVELOPMENT</h4>
+									</div>
+									<div class="serve-content">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="services-content">
+								<div class="serve-content-inner">
+									<span class="ico-circle">
+										<i class="ion-monitor"></i>
+									</span>
+									<div class="serve-title">
+										<h4>RESPONSIVE DESIGN</h4>
+									</div>
+									<div class="serve-content">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="services-content">
+								<div class="serve-content-inner">
+									<span class="ico-circle">
+										<i class="ion-monitor"></i>
+									</span>
+									<div class="serve-title">
+										<h4>HUBSPOT TEMPLATES</h4>
+									</div>
+									<div class="serve-content">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="services-content">
+								<div class="serve-content-inner">
+									<span class="ico-circle">
+										<i class="ion-monitor"></i>
+									</span>
+									<div class="serve-title">
+										<h4>GRAPHIC DESIGN</h4>
+									</div>
+									<div class="serve-content">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="services-content">
+								<div class="serve-content-inner">
+									<span class="ico-circle">
+										<i class="ion-monitor"></i>
+									</span>
+									<div class="serve-title">
+										<h4>SOCIAL MEDIA BOOSTING</h4>
+									</div>
+									<div class="serve-content">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- html code for services section ends here -->
+
+				<!-- html code for portfolio-section -->
+				<section class="portfolio-section" id="portfolio-section">
+					<div class="container">
+						<div class="portfolio-heading">
+							<div class="serve-title">
+								<h2>PORTFOLIO</h2>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+							</div>
+							<div class="line-bottom"></div>
+
+							<div id="filterButtons" class="filterButtons">
+								<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+								<button class="btn" onclick="filterSelection('web-design')"> Web Design</button>
+								<button class="btn" onclick="filterSelection('web-development')"> Web Development</button>
+								<button class="btn" onclick="filterSelection('graphics-design')"> Graphics Design</button>
+							</div>
+						</div>
+
+						<div class="content-wrap">
+							<div class="portfolio-column web-design">
+								<div class="portfolio-content">
+									<div class="image-portfolio">
+										<img src="images/work-1.jpg">
+									</div>
+									<div class="portfolio-details">
+										<div class="work-title">
+											<h4>Lorem Ipsum Dolor</h4>
+										</div>
+										<div class="work-field">
+											<span class="w-category">Web Design</span> 
+											/ 
+											<span class="w-date">18 Sep. 2018</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-column web-development">
+								<div class="portfolio-content">
+									<div class="image-portfolio">
+										<img src="images/work-2.jpg">
+									</div>
+									<div class="portfolio-details">
+										<div class="work-title">
+											<h4>Lorem Ipsum Dolor</h4>
+										</div>
+										<div class="work-field">
+											<span class="w-category">Web Development</span> 
+											/ 
+											<span class="w-date">18 Sep. 2018</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-column graphics-design">
+								<div class="portfolio-content">
+									<div class="image-portfolio">
+										<img src="images/work-3.jpg">
+									</div>
+									<div class="portfolio-details">
+										<div class="work-title">
+											<h4>Lorem Ipsum Dolor</h4>
+										</div>
+										<div class="work-field">
+											<span class="w-category">Graphics Design</span> 
+											/ 
+											<span class="w-date">18 Sep. 2018</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-column web-design">
+								<div class="portfolio-content">
+									<div class="image-portfolio">
+										<img src="images/work-4.jpg">
+									</div>
+									<div class="portfolio-details">
+										<div class="work-title">
+											<h4>Lorem Ipsum Dolor</h4>
+										</div>
+										<div class="work-field">
+											<span class="w-category">Web Design</span> 
+											/ 
+											<span class="w-date">18 Sep. 2018</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-column web-development">
+								<div class="portfolio-content">
+									<div class="image-portfolio">
+										<img src="images/work-5.jpg">
+									</div>
+									<div class="portfolio-details">
+										<div class="work-title">
+											<h4>Lorem Ipsum Dolor</h4>
+										</div>
+										<div class="work-field">
+											<span class="w-category">Web Development</span> 
+											/ 
+											<span class="w-date">18 Sep. 2018</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="portfolio-column graphics-design">
+								<div class="portfolio-content">
+									<div class="image-portfolio">
+										<img src="images/work-6.jpg">
+									</div>
+									<div class="portfolio-details">
+										<div class="work-title">
+											<h4>Lorem Ipsum Dolor</h4>
+										</div>
+										<div class="work-field">
+											<span class="w-category">Graphics Design</span> 
+											/ 
+											<span class="w-date">18 Sep. 2018</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- JavaScript code for filter on portfolio-section -->
+					<script>
+						filterSelection("all")
+						function filterSelection(c) {
+							var x, i;
+							x = document.getElementsByClassName("portfolio-column");
+							if (c == "all") c = "";
+							for (i = 0; i < x.length; i++) {
+								w3RemoveClass(x[i], "show");
+								if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+							}
+						}
+
+						function w3AddClass(element, name) {
+
+							var i, arr1, arr2;
+							arr1 = element.className.split(" ");
+							arr2 = name.split(" ");
+							for (i = 0; i < arr2.length; i++) {
+								if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+							}
+						}
+
+						function w3RemoveClass(element, name) {
+							var i, arr1, arr2;
+							arr1 = element.className.split(" ");
+							arr2 = name.split(" ");
+							for (i = 0; i < arr2.length; i++) {
+								while (arr1.indexOf(arr2[i]) > -1) {
+									arr1.splice(arr1.indexOf(arr2[i]), 1);
+								}
+							}
+							element.className = arr1.join(" ");
+						}
+
+						var btnContainer = document.getElementById("filterButtons");
+						var btns = btnContainer.getElementsByClassName("btn");
+						for (var i = 0; i < btns.length; i++) {
+							btns[i].addEventListener("click", function () {
+								var current = document.getElementsByClassName("active");
+								current[0].className = current[0].className.replace(" active", "");
+								this.className += " active";
+							});
+						}
+					</script>
+					<!-- JavaScript code for filter on portfolio-section ends here -->
+				</section>
+				<!-- html code for portfolio-section ends here -->
+
+				<!-- html code for terstimonials-section -->
+				<section class="testimonials-section" id="testimonials-section" style="background:url(images/overlay-bg.jpg); background-size: 100% 100%;">
+					<div class="overlay"></div>
+					<div class="container">
+						<div class="content-wrap">
+							<!-- owl carousel starts here -->
+							<div class="owl-carousel owl-theme">
+								<div class="test-content">
+									<div class="auth-image">
+										<img src="images/testimonial-4.jpg">
+									</div>
+									<div class="auth-name">
+										<h6>Ellissie Perry</h6>
+									</div>
+
+									<div class="auth-say">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+								</div>
+
+								<div class="test-content">
+									<div class="auth-image">
+										<img src="images/testimonial-2.jpg">
+									</div>
+									<div class="auth-name">
+										<h6>KP Oli</h6>
+									</div>
+
+									<div class="auth-say">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+								</div>
+
+								<div class="test-content">
+									<div class="auth-image">
+										<img src="images/testimonial-2.jpg">
+									</div>
+									<div class="auth-name">
+										<h6>KP Oli</h6>
+									</div>
+
+									<div class="auth-say">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+								</div>
+
+								<div class="test-content">
+									<div class="auth-image">
+										<img src="images/testimonial-2.jpg">
+									</div>
+									<div class="auth-name">
+										<h6>KP Oli</h6>
+									</div>
+
+									<div class="auth-say">
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+								</div>
+							</div>
+							<!-- owl carousel ends here -->
+						</div>
+					</div>
+
+					<!-- script for owl carousel -->
+					<script type="text/javascript">
+						$('.owl-carousel').owlCarousel({
+							loop:true,
+							margin:10,
+							nav:true,
+							responsive:{
+								0:{
+									items:1
+								},
+								540:{
+									items: 1
+								},
+								600:{
+									items:1
+								},
+								1000:{
+									items:1
+								}
+							}
+						})
+					</script>
+					<!-- script for owl carousel ends here -->
+				</section>
+				<!-- html code for terstimonials-section ends here -->
+
+				<!-- html code for blog-section -->
+				<section class="blog-section" id="blog-section">
+					<div class="container">
+						<div class="serve-title">
+							<h2>BLOGS</h2>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+						</div>
+						<div class="line-bottom"></div>
+						<div class="content-wrap">
+							<div class="blog-column">
+								<div class="blog-box">
+									<div class="blog-image">
+										<img src="images/post-1.jpg">
+									</div>
+
+									<div class="blog-body">
+										<div class="blog-cat">
+											<div class="blog-topic">
+												<span>Web Design</span>
+											</div>
+										</div>
+										<div class="blog-title">
+											<h4>Lorem Ipsum Dolar Sit Amet</h4>
+										</div>
+										<div class="blog-text">
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="blog-column">
+								<div class="blog-box">
+									<div class="blog-image">
+										<img src="images/post-1.jpg">
+									</div>
+
+									<div class="blog-body">
+										<div class="blog-cat">
+											<div class="blog-topic">
+												<span>Travel</span>
+											</div>
+										</div>
+										<div class="blog-title">
+											<h4>Lorem Ipsum Dolar Sit Amet</h4>
+										</div>
+										<div class="blog-text">
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="blog-column">
+								<div class="blog-box">
+									<div class="blog-image">
+										<img src="images/post-1.jpg">
+									</div>
+
+									<div class="blog-body">
+										<div class="blog-cat">
+											<div class="blog-topic">
+												<span>Web Development</span>
+											</div>
+										</div>
+										<div class="blog-title">
+											<h4>Lorem Ipsum Dolar Sit Amet</h4>
+										</div>
+										<div class="blog-text">
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="blog-column">
+								<div class="blog-box">
+									<div class="blog-image">
+										<img src="images/post-1.jpg">
+									</div>
+
+									<div class="blog-body">
+										<div class="blog-cat">
+											<div class="blog-topic">
+												<span>Frontend Development</span>
+											</div>
+										</div>
+										<div class="blog-title">
+											<h4>Lorem Ipsum Dolar Sit Amet</h4>
+										</div>
+										<div class="blog-text">
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="blog-column">
+								<div class="blog-box">
+									<div class="blog-image">
+										<img src="images/post-1.jpg">
+									</div>
+
+									<div class="blog-body">
+										<div class="blog-cat">
+											<div class="blog-topic">
+												<span>Web Development</span>
+											</div>
+										</div>
+										<div class="blog-title">
+											<h4>Lorem Ipsum Dolar Sit Amet</h4>
+										</div>
+										<div class="blog-text">
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="blog-column">
+								<div class="blog-box">
+									<div class="blog-image">
+										<img src="images/post-1.jpg">
+									</div>
+
+									<div class="blog-body">
+										<div class="blog-cat">
+											<div class="blog-topic">
+												<span>Web Development</span>
+											</div>
+										</div>
+										<div class="blog-title">
+											<h4>Lorem Ipsum Dolar Sit Amet</h4>
+										</div>
+										<div class="blog-text">
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- html code for blog-section ends here -->
+
+				<!-- html code for contact-section  -->
+				<section class="contact-section" id="contact-section" style="background:url(images/overlay-bg.jpg); background-size: 100% 100%;">
+					<div class="overlay"></div>
+					<div class="container">
+						<div class="content-wrap">
+							<div class="contact-column">
+								<div class="contact-box">
+									<div class="content-wrap">
+										<div class="form-column">
+											<div class="form-title">
+												<h3>Send Message</h3>
+											</div>
+
+											<form class="contact-form">
+												<div class="name">
+													<input type="text" name="name" placeholder="Name" id="name" required>
+												</div>
+
+												<div class="email">
+													<input type="text" name="email" placeholder="Email" id="email" required>
+												</div>
+
+												<div class="subject">
+													<input type="text" name="subject" placeholder="Subject" id="subject" required>
+												</div>
+
+												<div class="message">
+													<textarea placeholder="Message" id="message" required="true"></textarea>
+												</div>
+
+												<div class="submit">
+													<a href="">
+														<button>Send Message</button>
+													</a>
+												</div>
+											</form>
+										</div>
+										<div class="text-column">
+											<div class="title-touch">
+												<h3>Get In Touch</h3>
+											</div>
+											<div class="touch-content">
+												<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation.</p> 
+											</div>
+
+											<div class="more-info">
+												<div class="info-inner">
+													<span class="ion-ios-location"></span>
+													Tyanglaphant 03, Kirtipur Kathmandu
+												</div>
+
+												<div class="info-inner">
+													<span class="ion-ios-telephone"></span>
+													+977 9860460738
+												</div>
+
+												<div class="info-inner">
+													<span class="ion-email"></span>
+													ubhatta44@gmail.com
+												</div>
+
+												<div class="socials-link">
+													<ul>
+														<li>
+															<a target="_blank" href=" https://www.facebook.com/umesh.bhatta.79">
+																<span class="ico-circle">
+																	<i class="ion-social-facebook"></i>
+																</span>
+															</a>
+														</li>
+														<li>
+															<a target="_blank" href="https://www.instagram.com/_umesh10/">
+																<span class="ico-circle">
+																	<i class="ion-social-instagram"></i>
+																</span>
+															</a>
+														</li>
+														<li>
+															<a target="_blank" href="https://twitter.com/ubhatta44">
+																<span class="ico-circle">
+																	<i class="ion-social-twitter"></i>
+																</span>
+															</a>
+														</li>
+														<li>
+															<a target="_blank" href="https://github.com/ubhatta44">
+																<span class="ico-circle">
+																	<i class="ion-social-github"></i>
+																</span>
+															</a>
+														</li>
+														<li>
+															<a target="_blank" href="https://www.linkedin.com/in/umesh-bhatta-aa1007191/">
+																<span class="ico-circle">
+																	<i class="ion-social-linkedin"></i>
+																</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- html code for footer -->
+					<footer>
+						<div class="footer">
+							<div class="container">
+								<div class="content-wrap">
+									<div class="copyright-column">
+										<div class="copyright-text">
+											<p>© Copyright <span>Umesh Bhatta</span>. All Rights Reserved</p>
+											<p>Designed by Umesh Bhatta</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+					<!-- html code for footer ends here -->
+				</section>
+			</main>
+		</div>
+	</div>
+
+	<!-- html code for contact-section ends here -->
+
+	<!-- script for start from top on scroll -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('html').animate({scrollTop:0}, 1);
+			$('body').animate({scrollTop:0}, 1);
+		});
+	</script>
+	<!-- script for start from top on scroll ends here -->
+</div>
+</body>
+</html>
